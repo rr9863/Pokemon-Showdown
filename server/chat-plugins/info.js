@@ -1433,6 +1433,18 @@ const commands = {
 		this.sendReplyBox(`<a href="https://www.smogon.com/forums/forums/209/">Pok&eacute;mon Showdown Forums</a>`);
 	},
 
+	'!credits': true,
+	credits(target, room, user) {
+		if (!this.runBroadcast()) return;
+		this.sendReplyBox(`<a href="https://github.com/Zarel/Pokemon-Showdown/blob/master/README.md#credits">Pok&eacute;mon Showdown Credits</a>`);
+	},
+	
+	'!sprites': true,
+	sprites(target, room, user) {
+		if (!this.runBroadcast()) return;
+		this.sendReplyBox(`<a href="http://play.pokemonshowdown.com/sprites/">Pok&eacute;mon Showdown Sprite Directory</a>`);
+	},
+
 	'!privacypolicy': true,
 	privacypolicy(target, room, user) {
 		if (!this.runBroadcast()) return;
